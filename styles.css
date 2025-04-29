@@ -1,0 +1,151 @@
+:root {
+    --primary: #233b86;
+    --accent: #ffb347;
+    --bg: #f7f9fb;
+    --text: #222;
+    --muted: #666;
+    --radius: 12px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+header {
+    background: #fff;
+    padding: 2.5rem 1.5rem 2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+.logo {
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--primary);
+    letter-spacing: -1px;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    color: var(--muted);
+    font-size: 1.15rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-btn {
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius);
+    padding: 0.9rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(79, 140, 255, 0.08);
+    margin-bottom: 1rem;
+}
+
+.cta-btn:hover {
+    background: #1a4c9b;
+}
+
+.buy-coffee {
+    display: inline-block;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.buy-coffee:hover {
+    color: #ff9800;
+}
+
+main {
+    max-width: 900px;
+    margin: 2.5rem auto;
+    padding: 0 1.5rem;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.feature {
+    background: #fff;
+    border-radius: var(--radius);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.feature-icon {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 0.3rem;
+}
+
+img.feature-icon  {
+    height: 1em;
+    width: 1em;
+    margin: 0.75rem 0.5rem;
+}
+
+.feature-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+}
+
+.feature-desc {
+    color: var(--muted);
+    font-size: 1rem;
+}
+
+.tested {
+    background: #eaf6ff;
+    color: var(--primary);
+    border-radius: var(--radius);
+    padding: 0.7rem 1.2rem;
+    font-size: 0.98rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.98rem;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+}
+
+@media (max-width: 600px) {
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        padding: 2rem 1rem 1.5rem 1rem;
+    }
+
+    main {
+        padding: 0 0.5rem;
+    }
+}
