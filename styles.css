@@ -58,20 +58,6 @@ header {
     background: #1a4c9b;
 }
 
-.buy-coffee {
-    display: inline-block;
-    margin-top: 0.5rem;
-    text-decoration: none;
-    color: var(--accent);
-    font-weight: 600;
-    font-size: 1rem;
-    transition: color 0.2s;
-}
-
-.buy-coffee:hover {
-    color: #ff9800;
-}
-
 main {
     max-width: 900px;
     margin: 2.5rem auto;
@@ -119,21 +105,61 @@ img.feature-icon  {
     font-size: 1rem;
 }
 
-.tested {
-    background: #eaf6ff;
+.privacy-policy {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    margin: 5rem 8rem 8rem;
+    font-size: 1rem;
+}
+
+.privacy-policy h1 {
     color: var(--primary);
-    border-radius: var(--radius);
-    padding: 0.7rem 1.2rem;
-    font-size: 0.98rem;
-    display: inline-block;
-    margin-bottom: 2rem;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 0.3rem;
+}
+
+.last-updated {
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
 footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    padding: 1em 0;
     text-align: center;
     color: var(--muted);
-    font-size: 0.98rem;
-    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.footer-nav {
+    margin-top: 0.7rem;
+    margin-bottom: 1.2rem;
+    display: inline-block;
+}
+
+.footer-nav a {
+    color: var(--primary);
+    text-decoration: none;
+    margin: 0 0.5em;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.footer-nav a:hover {
+    color: var(--accent);
+}
+
+.a {
+    width: 415px;
 }
 
 @media (max-width: 600px) {
