@@ -160,13 +160,13 @@ footer {
     padding-bottom: 1.5rem;
 }
 
-.footer-nav {
+nav {
     margin-top: 0.7rem;
     margin-bottom: 1.2rem;
     display: inline-block;
 }
 
-.footer-nav a {
+nav a {
     color: var(--primary);
     text-decoration: none;
     margin: 0 0.5em;
@@ -174,12 +174,18 @@ footer {
     transition: color 0.2s;
 }
 
-.footer-nav a:hover {
+nav a:hover {
     color: var(--accent);
 }
 
 .a {
     width: 415px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
 
 @media (max-width: 600px) {
