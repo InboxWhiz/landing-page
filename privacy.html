@@ -14,7 +14,7 @@
     <section class="privacy-policy">
         <h1>Privacy Policy</h1>
         <p class="last-updated">
-            Last updated: May 6, 2025
+            Last updated: June 1, 2025
         </p>
         <p>
             This Privacy Policy explains how we collect, use, and safeguard your information when you use our services.
@@ -32,10 +32,41 @@
         <p>
             Your email content, metadata, and the authorization credentials used to retrieve this information
             are accessed only with your permission and stored only on your web browser, never on our servers.
-            This information is permanently deleted upon the removal of the InboxWhiz web extension.
+            InboxWhiz accesses your email data, which includes the content and metadata of email
+            messages, via the Gmail API. This data is used exclusively to facilitate the processing
+            (block/delete/unsubscribe) of emails. This information is permanently deleted upon the removal of the
+            InboxWhiz web extension.
             <br /><br />
             We do not sell, trade, or otherwise transfer your personal information to third parties.
         </p>
+        <h2>Data Protection and Security</h2>
+
+        <p>
+            Because InboxWhiz handles sensitive Gmail data, we have implemented the following measures to protect it:
+        </p>
+        <ul>
+            <li><strong>Encryption in Transit:</strong> Every request to Google's APIs (including token exchanges and
+                Gmail data fetches) is made over HTTPS/TLS. This ensures that all data (your emails, metadata, and
+                tokens) is encrypted while traveling between your browser and Google's servers.</li>
+            <li><strong>Local Storage Isolation:</strong> We store tokens and any metadata only in your
+                browser's extension-specific storage area. This storage is isolated per-extension, meaning no other
+                website or extension can read it. We do not write this data to any server or share it externally.</li>
+            <li><strong>Token Handling:</strong> OAuth 2.0 tokens (access tokens, refresh tokens) are managed
+                exclusively by the extension. We never log or transmit tokens outside your local browser.</li>
+            <li><strong>Limited Lifetime:</strong> OAuth access tokens issued by Google expire (typically after 1 hour).
+                We do not store long-lived credentials on any server. If a token expires or is revoked, InboxWhiz
+                prompts you to re-authenticate.</li>
+            <li><strong>Access Controls:</strong> InboxWhiz only operates under the exact Google scopes you grant during
+                OAuth consent. You can revoke our access at any time from your Google Account → Security →
+                Third-party apps and services.</li>
+            <li><strong>Deletion Upon Uninstall:</strong> When you uninstall or disable the InboxWhiz extension, all
+                sensitive data (tokens, any cached email-metadata) is automatically purged from your browser. We do not
+                attempt to back it up or re-upload it elsewhere.</li>
+            <li><strong>No Human Access:</strong> The extension does not transmit your Gmail data to any human or
+                support-team inbox. All parsing, filtering, and unsubscribe/delete logic is performed entirely within
+                your browser, under your control.</li>
+        </ul>
+
         <h2>Additional Limits on Use of Your Google Data</h2>
         <p>
             Notwithstanding any other provision in this Privacy Policy, if you grant InboxWhiz access to your Google
